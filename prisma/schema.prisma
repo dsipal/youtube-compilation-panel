@@ -64,3 +64,20 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model RedditSource {
+    subreddit String @unique 
+    // type String @default("reddit")
+    // frequency String @default("weekly")
+    // nextScrape DateTime
+    // lastScrape DateTime
+}
+
+// enum SourceType {
+//     REDDIT
+// }
+
+// enum Frequency {
+//     DAILY
+//     WEEKLY
+// }
